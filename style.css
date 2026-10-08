@@ -1,0 +1,231 @@
+/* ================================
+   RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1e293b;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+header {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    box-shadow: 0 5px 20px rgba(79, 70, 229, 0.25);
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+
+/* ================================
+   MAIN
+================================ */
+main {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+
+/* ================================
+   CARD
+================================ */
+.card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.12);
+}
+
+
+/* ================================
+   JUDUL CARD
+================================ */
+.card h2 {
+    color: #4f46e5;
+    font-size: 22px;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eef2ff;
+}
+
+
+/* ================================
+   IDENTITAS MAHASISWA
+================================ */
+.card p {
+    background-color: #f8fafc;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 4px solid #6366f1;
+}
+
+.card p strong {
+    display: inline-block;
+    width: 150px;
+    color: #475569;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+button {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+
+    border: none;
+    padding: 13px 22px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    box-shadow:
+        0 5px 15px rgba(99, 102, 241, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   DAFTAR NILAI
+================================ */
+#daftar-nilai {
+    list-style: none;
+    margin-top: 5px;
+}
+
+
+/* Setiap mata kuliah */
+#daftar-nilai li {
+    background: linear-gradient(
+        135deg,
+        #f5f3ff,
+        #eef2ff
+    );
+
+    border: 1px solid #e0e7ff;
+
+    border-left: 5px solid #6366f1;
+
+    padding: 14px 16px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    font-weight: 500;
+
+    color: #334155;
+
+    transition: all 0.3s ease;
+}
+
+#daftar-nilai li:hover {
+    transform: translateX(5px);
+
+    background-color: #eef2ff;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background-color: #1e293b;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card p strong {
+        display: block;
+        width: auto;
+        margin-bottom: 3px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
